@@ -25,13 +25,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6fbd83f-c4e5-42db-8102-c966ab063e0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/P6SnowTricks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/P6SnowTricks.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,6 +112,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/proxy-manager-bridge" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
     </include_path>
   </component>
   <component name="ProjectId" id="25UfPEAIa3QBoeijXMLBaDQMBpT" />
@@ -141,7 +141,7 @@
       <updated>1645586560549</updated>
       <workItem from="1645586561790" duration="626000" />
       <workItem from="1645587765097" duration="1004000" />
-      <workItem from="1645588893609" duration="8821000" />
+      <workItem from="1645588893609" duration="14654000" />
     </task>
     <servers />
   </component>
@@ -158,5 +158,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="405" y="245" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1645608627087">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="405" y="245" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.835@0.23.1440.835" timestamp="1645608627087" />
+    <state x="284" y="250" width="604" height="490" key="find.popup" timestamp="1645607546601">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="284" y="250" width="604" height="490" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1645607546601" />
   </component>
 </project>
