@@ -1,0 +1,293 @@
+/*=================================
+-----------------------------------
+  Snowtricks
+  Version: 1.0
+ ---------------------------------
+ =================================*/
+
+
+/*----------------------------------------*/
+/* Template default CSS
+/*----------------------------------------*/
+
+html,
+body {
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: #0a183d;
+    font-weight: 600;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 15px;
+    color: #6a7080;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+    outline: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------------
+Helper CSS
+ -----------------------*/
+
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 60px;
+}
+
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.spad {
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+    color: #fff;
+}
+
+/*------------------
+Header section
+ ---------------------*/
+
+.header-section {
+    padding-left: 55px;
+    padding-right: 55px;
+    background: #08192d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo {
+    display: inline-block;
+    padding: 0;
+}
+
+
+.main-menu .user-panel {
+    display: inline-block;
+}
+
+.main-menu .user-panel a {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.main-menu .user-panel .register {
+    color: #fc0254;
+    margin-right: 0;
+}
+
+.main-menu span {
+    color: #fff;
+    display: inline-block;
+    padding-left: 9px;
+}
+
+.main-menu {
+    list-style: none;
+    margin-left: auto;
+}
+
+.main-menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-menu li a {
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 44px 10px;
+}
+
+.main-menu li a:hover {
+    color: #fc0254;
+}
+
+.main-menu li:first-child a {
+    margin-left: 0;
+}
+
+.main-menu li:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+}
+
+.main-menu .sub-menu {
+    position: absolute;
+    list-style: none;
+    width: 220px;
+    left: 60px;
+    top: 100%;
+    padding: 20px 0;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 50px;
+    background: #fff;
+    z-index: 99;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.main-menu .sub-menu li {
+    display: block;
+}
+
+.main-menu .sub-menu li a {
+    display: block;
+    color: #000;
+    margin-left: 0;
+    padding: 5px 20px;
+}
+
+.main-menu .sub-menu li a:hover {
+    color: #fc0254;
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+/*------------------
+Hero section
+ ---------------------*/
+
+.hero-section {
+    overflow: hidden;
+}
+
+.hs-item {
+    height: 724px;
+    padding-bottom: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #0a183d;
+}
+
+.hs-item h2 {
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 25px;
+    line-height: 0.9;
+    position: relative;
+    top: 50px;
+}
+
+.hs-item h2 span {
+    color: #fc0254;
+}
+
+.hs-item p {
+    color: #ffffff;
+    opacity: 0.6;
+    margin-bottom: 50px;
+    position: relative;
+    top: 50px;
+}
+
+.hs-item .site-btn {
+    position: relative;
+    top: 50px;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+
+.hs-item .sb-c2 {
+    margin-left: 8px;
+}
+
+.hs-item .hs-text {
+    padding-top: 90px;
+    max-width: 475px;
+}
+
+.hr-img img {
+    min-width: 602px;
+    position: relative;
+    left: -34px;
+    top: 50px;
+}
