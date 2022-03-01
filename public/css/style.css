@@ -195,7 +195,7 @@ Header section
     position: absolute;
     list-style: none;
     width: 220px;
-    left: 60px;
+    left: 0;
     top: 100%;
     padding: 20px 0;
     visibility: hidden;
@@ -237,7 +237,6 @@ Hero section
 }
 
 .hs-item {
-    height: 724px;
     padding-bottom: 90px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -290,4 +289,53 @@ Hero section
     position: relative;
     left: -34px;
     top: 50px;
+}
+
+
+/* ----------------
+Playlist page
+ -------------------*/
+
+.trick-section {
+    padding: 105px 42px;
+}
+
+.trick-section .section-title {
+    float: left;
+}
+
+.trick-filter {
+    text-align: right;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+.trick-filter li {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #6a7080;
+    padding: 10px 6px 16px;
+    margin-right: 55px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.trick-filter li.mixitup-control-active {
+    border-bottom: 2px solid #fc0254;
+}
+
+.trick-item {
+    text-align: center;
+    padding: 0 11px;
+    margin-bottom: 30px;
+}
+
+.trick-item img {
+    min-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 40px;
+    margin-bottom: 30px;
 }

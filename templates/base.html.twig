@@ -40,11 +40,22 @@
     </a>
     <ul class="main-menu">
         <li><a href="{{ path('home') }}">Home</a></li>
-        <li><a href="#">Tricks</a></li>
+        <li><a href="{{ path('home') }}#tricks">Tricks</a>
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <ul class="sub-menu">
+                <li><a href="{{ path('trick.all') }}">Tous mes tricks</a>
+                <li><a href="{{ path('trick.add') }}">Ajouter un trick</a>
+            </ul>
+            {% endif %}
+        </li>
         <div class="user-panel">
-            <a href="" class="login">Sign in</a>
-            <span>|</span>
-            <a href="" class="register">Sign up</a>
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                <a href="{{ path('app_logout') }}" class="login">Logout</a>
+            {% else %}
+                <a href="{{ path('app_login') }}" class="login">Sign in</a>
+                <span>|</span>
+                <a href="{{ path('reg') }}" class="register">Sign up</a>
+            {% endif %}
         </div>
     </ul>
 </header>
