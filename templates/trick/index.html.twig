@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TrickController!{% endblock %}
+
+{% block body %}
+
+    <div class="container spad">
+        <h2 class="mb-4">Tricks</h2>
+        {% if tricks|length > 0 %}
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <td>Titre:</td>
+                <td>Description:</td>
+                <td>Date de création</td>
+                <td>category</td>
+                <td>user</td>
+            </tr>
+            </thead>
+            <tbody>
+
+                {% for trick in tricks %}
+                    <tr>
+                        <td><a href="">{{ trick.title }}</a></td>
+                        <td>{{ trick.description }}</td>
+                        <td>{{ trick.createdAt |date("m/d/Y") }}</td>
+                        <td>{{ trick.category.title }}</td>
+                        <td>{{ trick.author.userIdentifier }}</td>
+                        <td></td>
+                        <td>
+                            <a href="">Modifier</a>
+                            <span>|</span>
+                            <a href="">Supprimer</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+            <p>Vous n'avez pas encore crée de tricks</p>
+        {% endif %}
+    </div>
+
+{% endblock %}

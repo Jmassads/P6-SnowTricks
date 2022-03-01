@@ -13,7 +13,9 @@
                         <div class="col-lg-6">
                             <div class="hs-text">
                                 <h2><span>Snow</span> Tricks</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                    gravida. </p>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -27,5 +29,35 @@
         </div>
     </section>
     <!-- Hero section end -->
+
+    <!-- Tricks section -->
+    <section id="tricks">
+        <div class="container spad">
+            <div class="section-title">
+                <h2>Tricks</h2>
+            </div>
+            <div class="container">
+                <ul class="trick-filter controls">
+                    {% for category in categories %}
+                        <li class="control" data-filter=".{{ category.category.title }}">{{ category.category.title }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row trick-area">
+                {% for trick in tricks %}
+                    <div class="mix col-lg-3 col-md-4 col-sm-6 {{ trick.category.title }}">
+                        <div class="trick-item">
+                            <img src="{{ asset('img/' ~ trick.image) }}" alt="">
+                            <h5>{{ trick.title }}</h5>
+                            <span>{{ trick.category.title }}</span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- Tricks section end -->
+
 
 {% endblock %}

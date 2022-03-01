@@ -31,12 +31,9 @@ class AppFixtures extends Fixture
 
         for ($u = 1; $u < 10; $u++) {
             $user = new User();
-            $user ->setFirstName('firstname' . $u)
-                ->setLastName('lastname' . $u)
-                ->setEmail('email')
+            $user
                 ->setUsername('username' . $u)
-                ->setPassword('password' . $u)
-                ->setRole($adminRole);
+                ->setPassword('password' . $u);
 
             $manager->persist($user);
             $users[] = $user;
